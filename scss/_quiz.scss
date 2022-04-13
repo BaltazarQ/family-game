@@ -1,0 +1,133 @@
+.body-quiz {
+    display: flex;
+
+
+    .fireworks {
+        display: flex;
+        margin: 0 50px;
+        
+        flex-direction: column;
+        position: relative;
+        flex: 1;
+        display: none;
+        
+        &1, &2, &3 {
+            width: 100%;
+        }
+
+        &1 {
+            position: absolute;
+            top: 150px;
+        }
+
+        &2 {
+            position: absolute;
+            top: 50px;
+        }
+
+        &3 {
+            position: absolute;
+            top: 300px;
+            // left: 0;
+        }
+
+        @media (max-width: 720px) {
+            margin: 0;
+        }
+    }
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+
+    &-wrapper {
+        height: auto;
+        min-height: 500px;
+    }
+
+    &-container {
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    
+        #quiz {
+          width: 100%;
+        }
+
+        .question {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 1em;
+        }
+    }
+}
+
+.slide {
+    left: 0px;
+    top: 0px;
+    width: 70%;
+    margin: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 720px) {
+        width: 100%;
+        margin: auto;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.85em;
+    }
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin: 3em;
+    font-size: 0.8em;
+    // background: #f1ca1f;
+    text-align: center;
+    padding: 0.5em 1em;
+  }
+
+  #homepage {
+      display: none;
+  }
+}
+
+#results {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: auto;
+
+    label {
+        margin-top: 1em;
+    }
+}
+

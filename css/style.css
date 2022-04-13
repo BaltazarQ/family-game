@@ -1,0 +1,305 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+footer,
+header,
+main,
+nav,
+section {
+  display: block; }
+
+html {
+  font-family: sans-serif;
+  background: #fff; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #323232; }
+
+li {
+  list-style: none; }
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #323232; }
+
+a:hover,
+a:focus {
+  color: #eee; }
+
+footer {
+  width: 100%; }
+
+::selection {
+  background: darkgoldenrod; }
+
+header {
+  background: #eee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000; }
+  @media (max-width: 620px) {
+    header {
+      font-size: 75%; } }
+
+.header-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .header-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em; }
+  .header-section h2 {
+    margin: 0; }
+  .header-section p {
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 1px #000000; }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+.btn {
+  text-align: center;
+  font-size: 1em;
+  margin: 3em auto;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  padding: 1em 3em;
+  background: #fe0000;
+  background: linear-gradient(45deg, #fe0000 0%, #e9f11f 100%);
+  border-radius: 5px;
+  animation: zoom 1s; }
+  .btn:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #eee; }
+
+.siblings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 0 3em; }
+  .siblings .person {
+    min-width: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 1%;
+    padding: 1em;
+    text-align: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #acacac; }
+    .siblings .person:hover {
+      transform: scale(1.05);
+      transition: 0.4s; }
+    .siblings .person .figure:hover {
+      color: #323232; }
+    .siblings .person img {
+      width: 90%;
+      max-width: 132px;
+      height: auto;
+      border-radius: 50%; }
+    .siblings .person p {
+      font-style: italic;
+      line-height: 2em; }
+  @media (max-width: 1020px) {
+    .siblings {
+      height: auto;
+      padding: 3em 1em; }
+      .siblings .figure {
+        height: auto;
+        flex: none;
+        margin: 0% 0%; }
+        .siblings .figure img {
+          width: 50%; }
+        .siblings .figure h4 {
+          margin-bottom: 0; } }
+  @media (max-width: 770px) {
+    .siblings {
+      flex-direction: column; }
+      .siblings .person {
+        align-items: flex-start;
+        margin: 3% 5%; }
+      .siblings .figure {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
+        .siblings .figure-text {
+          margin: 0 2em; }
+        .siblings .figure img {
+          width: 50px;
+          height: 50px; } }
+  @media (max-width: 520px) {
+    .siblings .figure-text {
+      margin: 0 1em; }
+      .siblings .figure-text h4 {
+        margin: 0; }
+      .siblings .figure-text p {
+        line-height: 1.5em;
+        margin: 0.5em 0; } }
+
+.selected {
+  transform: scale(1.2);
+  background: #acacac; }
+
+.difficulty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .difficulty h1 {
+    font-size: 3em;
+    text-align: center; }
+  .difficulty form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em; }
+  .difficulty label {
+    width: 33%;
+    text-align: center; }
+
+.text {
+  height: 100vh;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .text h1 {
+    font-size: 3em; }
+  .text p {
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+    letter-spacing: 3px; }
+
+@media (max-width: 770px) {
+  body {
+    font-size: 0.85em; } }
+.body-quiz {
+  display: flex; }
+  .body-quiz .fireworks {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    display: none; }
+    .body-quiz .fireworks1, .body-quiz .fireworks2, .body-quiz .fireworks3 {
+      width: 100%; }
+    .body-quiz .fireworks1 {
+      position: absolute;
+      top: 150px; }
+    .body-quiz .fireworks2 {
+      position: absolute;
+      top: 50px; }
+    .body-quiz .fireworks3 {
+      position: absolute;
+      top: 300px; }
+    @media (max-width: 720px) {
+      .body-quiz .fireworks {
+        margin: 0; } }
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  flex: 4; }
+  .quiz-wrapper {
+    height: auto;
+    min-height: 500px; }
+  .quiz-container {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; }
+    .quiz-container #quiz {
+      width: 100%; }
+    .quiz-container .question {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 1em; }
+
+.slide {
+  left: 0px;
+  top: 0px;
+  width: 70%;
+  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  @media (max-width: 720px) {
+    .slide {
+      width: 100%;
+      margin: auto; } }
+  @media (max-width: 480px) {
+    .slide {
+      font-size: 0.85em; } }
+
+.active-slide {
+  opacity: 1;
+  z-index: 2; }
+
+.buttons {
+  display: flex;
+  justify-content: center; }
+  .buttons .btn {
+    margin: 3em;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0.5em 1em; }
+  .buttons #homepage {
+    display: none; }
+
+#results {
+  display: flex;
+  justify-content: center;
+  margin: 3em; }
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin: auto; }
+  .answers label {
+    margin-top: 1em; }
+
+/*# sourceMappingURL=style.css.map */
