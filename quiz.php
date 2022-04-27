@@ -16,36 +16,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
-
-<?php
-
-    // $names = [
-    //     'Katarína',
-    //     'Daniela',
-    //     'Stanislav',
-    //     'Marjen',
-    //     'Martin',
-    //   ];
-
-    //   foreach ($names as $name) {
-    //       $title = mb_strtolower($name);
-    //         $znaky = array(
-    //             'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'Č'=>'C', 'č'=>'c', 'Á'=>'A', 'Ä'=>'A', 'É'=>'E', 'Ë'=>'E',
-    //             'Í'=>'I', 'Ó'=>'O', 'Ô'=>'O', 'Ö'=>'O', 'Ú'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'á'=>'a', 'ä'=>'a', 'é'=>'e',
-    //             'ë'=>'e', 'í'=>'i', 'ó'=>'o', 'ô'=>'o', 'ö'=>'o', 'ú'=>'u', 'ý'=>'y', 'ý'=>'y', 'Ŕ'=>'R', 'ŕ'=>'r',
-    //             'Ř'=>'R', 'ř'=>'r', 'Ě'=>'E', 'ě'=>'e', 'Ů'=>'U', 'ů'=>'u', ' '=>'_', ':'=>'_', '!'=>'_', '?'=>'_',
-    //             '/'=>'_', '%'=>'_', '*'=>'_', '"'=>'_', '<'=>'_', '>'=>'_', '|'=>'_', '+'=>'_', '['=>'(', ']'=>')',
-    //             'ľ'=>'l', 'Ľ'=>'L', 'ĺ'=>'Ĺ'
-    //         );
-        
-    //         $title = strtr($title, $znaky);
-    //   }
-?>
-
-        </main>
-    </body>
-
     <body class="body-quiz">
 
         <aside class="fireworks fireworks-left">
@@ -64,7 +34,6 @@
                 </div>
             </section>
                     
-                    
             <section class="buttons">
                 <a class="btn" id="previous">Naspäť</a>
                 <a class="btn" id="next">Ďalej</a>
@@ -72,15 +41,12 @@
                 <a href="index.php" class="btn" id="homepage">Na úvodnú stránku</a>
             </section>
             <section id="results"></section>
-            
-            
         </main>
         
         <aside class="fireworks fireworks-right">
             <img class="fireworks1" src="img/fireworks-1.gif" alt="">
             <img class="fireworks3" src="img/fireworks-2.gif" alt="">
             <img class="fireworks2" src="img/fireworks-3.gif" alt="">
-                    
         </aside>
 
 

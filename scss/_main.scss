@@ -29,7 +29,6 @@
         
         .figure:hover {
             color: #323232;
-
         }
     
         img {
@@ -37,7 +36,6 @@
             max-width: 132px;
             height: auto;
             border-radius: 50%;
-            // object-fit: cover;
         }
     
         p {
@@ -47,8 +45,6 @@
     }
     
 
-
-    
 
     @media (max-width: 1020px) {
 
@@ -72,7 +68,6 @@
 
     @media (max-width: 770px) {
         flex-direction: column;
-        // align-items: normal;
 
         .person {
             align-items: flex-start;
@@ -85,7 +80,6 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            // margin: 0%;
 
             &-text {
                 margin: 0 2em;
@@ -95,17 +89,7 @@
                 width: 50px;
                 height: 50px;
             }
-
-            // &:hover {
-            //     transform: scale(1.1);
-            //     transition: 0.4s;
-            // }
-
-            // img {
-            //     padding: 2%;
-            // }
         }
-
     }
 
     @media (max-width: 520px) {
@@ -178,6 +162,5 @@
 @media (max-width: 770px) {
     body{
         font-size: 0.85em;
-
     }
 }

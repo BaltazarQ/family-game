@@ -2,16 +2,16 @@ $(document).ready(function($) {
 
 var choose = $('.header-section').find('a'),
     header = $('header'),
-    siblings = $('.siblings'),
+    // siblings = $('.siblings'),
     person = $('.person'),
     figures = $('#figures'),
-    figure = $('.figure'),
+    // figure = $('.figure'),
     figureText = $('.figure .figure-text'),
     difficulty = $('#difficulty'),
-    sibling = [],
+    // sibling = [],
 
     submit = $('#difficulty').find('#submit'),
-    backToFigure = $('#back-to-figure'),
+    // backToFigure = $('#back-to-figure'),
     
     scrollToSection = function (event) {
         event.preventDefault();
@@ -41,17 +41,6 @@ figureText.hide();
 // po kliknuti na tlacidlo v headeri skryjem header a zobrazim zvysok stranky
 choose.on('click', scrollToSection);
 
-
-
-// skryjem popis postavy
-// figureText.hide();
-
-// pri hoveri na postavu zobrazenie popisu postavy
-// person.on('mouseenter', function(){
-//     $(this).find(figureText).slideDown(500);
-
-// });
-
 // po kliknuti na postavu zvyraznenie postavy a zoskrolovanie na obtiaznost
 person.on('click', function(event){
     event.preventDefault();
@@ -68,7 +57,6 @@ person.on('click', function(event){
 
 // skryjem popis pre lahku a tazku uroven
 $('.text').hide();
-
 
 // po kliknuti na potvrdenie obtiaznosti
 submit.on('click', function(event) {
@@ -114,7 +102,6 @@ submit.on('click', function(event) {
     };
 });
 
-
 // pri popise lahkej / tazkej urovni po kliknuti na tlacidlo vrati naspat na vyber obtiaznosti
 var again = $('.again');
 
@@ -123,7 +110,6 @@ again.on('click', function(event) {
     difficulty.slideDown(500)
     $(this).parent().slideUp(500);
 });
-
 
 
 })(jQuery);

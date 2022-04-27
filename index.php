@@ -30,63 +30,55 @@
             <section class="siblings" id="siblings">
 
                 <?php 
-                $katarina = 'Katarina';
-                $daniela = 'Daniela';
-                $stanislav = 'Veľká hlava';
-                $marjen = 'Marjen';
-                $martin = 'Martin';
+                    $katarina = 'Katarina';
+                    $daniela = 'Daniela';
+                    $stanislav = 'Veľká hlava';
+                    $marjen = 'Marjen';
+                    $martin = 'Martin';
 
-                $siblings = [
+                    $siblings = [
+                        [
+                            'name' => 'Katarína',
+                            'class' => 'katarina',
+                            'description' => 'krycie meno: Minister - neoficiálna hlava gangu Prokopovcov. <br>Heslo: "Nestačí dobre vyzerať."',
+                        ],
+                    
+                        [
+                            'name' => 'Daniela',
+                            'class' => 'daniela',
+                            'description' => 'krycie meno: Plánovač - plánovacia zložka gangu <br>Heslo: "Za peníze v Preze dúm..."',
+                        ],
 
-                    [
-                        'name' => 'Katarína',
-                        'class' => 'katarina',
-                        'description' => 'krycie meno: Minister - neoficiálna hlava gangu Prokopovcov. <br>Heslo: "Nestačí dobre vyzerať."',
-                    ],
-                
-                    [
-                        'name' => 'Daniela',
-                        'class' => 'daniela',
-                        'description' => 'krycie meno: Plánovač - plánovacia zložka gangu <br>Heslo: "Za peníze v Preze dúm..."',
-                    ],
+                        [
+                            'name'=> 'Stanislav',
+                            'class' => 'stanislav',
+                            'description' => 'krycie meno: Braňo - teoretická zložka gangu <br>Heslo: "Čo neviem, to si vymyslím!"',
+                        ],
 
-                    [
-                        'name'=> 'Stanislav',
-                        'class' => 'stanislav',
-                        'description' => 'krycie meno: Braňo - teoretická zložka gangu <br>Heslo: "Čo neviem, to si vymyslím!"',
-                    ],
+                        [
+                            'name' => 'Mária',
+                            'class' => 'maria',
+                            'description' => 'krycie meno: Kaderník - hovorca gangu, zavrieť jej ústa je takmer nemožné <br>Heslo: "Ja ti poviem, čo si myslíš!"',
+                        ],
 
-                    [
-                        'name' => 'Mária',
-                        'class' => 'maria',
-                        'description' => 'krycie meno: Kaderník - hovorca gangu, zavrieť jej ústa je takmer nemožné <br>Heslo: "Ja ti poviem, čo si myslíš!"',
-                    ],
+                        [
+                            'name' => 'Martin',
+                            'class' => 'martin',
+                            'description' => 'krycie meno: Šéf - výkonná zložka gangu Prokopovcov. <br>Heslo: "Idem, riešim!"'
+                        ],
+                    ];
+                    
+                    foreach ($siblings as $sibling) {
+                        $title = strtolower($sibling['class']);
+                        $title = str_replace(' ', '_', $title);
 
-                    [
-                        'name' => 'Martin',
-                        'class' => 'martin',
-                        'description' => 'krycie meno: Šéf - výkonná zložka gangu Prokopovcov. <br>Heslo: "Idem, riešim!"'
-                    ],
-
-                ];
-                
-
-                
-                foreach ($siblings as $sibling) {
-                    $title = strtolower($sibling['class']);
-                    $title = str_replace(' ', '_', $title);
-
-                    echo '<div  class="person"><a href="#difficulty" class="figure" title="' . $title . '">';
-                    echo '<img src="img/' . $sibling['class'] . '.jpg" title="' . $title . '">
-                    <article class="figure-text ' . $sibling['class'] . '"><h4>' . $sibling['name'] . '</h4>
-                    <p>' . $sibling['description'] . '</p></article>';
-                    echo '</a></div>';
-                };
-
+                        echo '<div  class="person"><a href="#difficulty" class="figure" title="' . $title . '">';
+                        echo '<img src="img/' . $sibling['class'] . '.jpg" title="' . $title . '">
+                        <article class="figure-text ' . $sibling['class'] . '"><h4>' . $sibling['name'] . '</h4>
+                        <p>' . $sibling['description'] . '</p></article>';
+                        echo '</a></div>';
+                    };
                 ?>
-
-
-
 
             </section>
 
@@ -103,7 +95,6 @@
                         <input type="radio" id="hard" name="difficulty" value="hard">Ťažká
                     </label>
                     <input class="btn" id="submit" type="submit" value="Potvrď">
-                    <!-- <input class="btn" id="back-to-figure" type="button" value="Výber postavy"> -->
                 </form>
             </section>
 
@@ -117,9 +108,7 @@
                 <h1>Ťažká úroveň</h1>
                 <p>Ooo-ooo-ooo!!! Niekto sa cíti ako Rambo? Odvážnym vraj šťastie praje? Ale odvážnych je plný cintorín. Nedělejte machry a sa spamätaj!!!</p>
                 <a class="btn again" href="#difficulty">Vyber si ešte raz</a>
-
             </section>
-
         </main>
 
         <footer>
