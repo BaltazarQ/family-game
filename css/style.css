@@ -40,6 +40,9 @@ a:focus {
 footer {
   width: 100%; }
 
+::-moz-selection {
+  background: darkgoldenrod; }
+
 ::selection {
   background: darkgoldenrod; }
 
@@ -72,6 +75,11 @@ header {
     font-weight: 100;
     letter-spacing: 3px;
     text-shadow: 0px 0px 1px #000000; }
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 @keyframes zoom {
   from {
     transform: scale(0); }
@@ -87,6 +95,7 @@ header {
   background: #fe0000;
   background: linear-gradient(45deg, #fe0000 0%, #e9f11f 100%);
   border-radius: 5px;
+  -webkit-animation: zoom 1s;
   animation: zoom 1s; }
   .btn:hover {
     transform: scale(1.1);

@@ -36,6 +36,11 @@ header {
         text-shadow: 0px 0px 1px #000000;
     }
 
+    @-webkit-keyframes zoom {
+        from {transform: scale(0);}
+        to {transform: scale(1);}
+    }
+
     @keyframes zoom {
         from {transform: scale(0);}
         to {transform: scale(1);}
@@ -52,7 +57,8 @@ header {
     background: rgb(254,0,0);
     background: linear-gradient(45deg, rgba(254,0,0,1) 0%, rgba(233,241,31,1) 100%);
     border-radius: 5px;
-    animation: zoom 1s;
+    -webkit-animation: zoom 1s;
+            animation: zoom 1s;
     
     &:hover {
         transform: scale(1.1);
